@@ -1,0 +1,147 @@
+/*
+file: styles.css
+GUI Assignment: HW5 one line scrabble
+Jasmeet Kaur, UMass Lowell Computer Science, jasmeet_kaur@student.uml.edu
+Copyright (c) 2024 by Jasmeet. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+*/
+body 
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center; 
+}
+
+header 
+{
+    margin-bottom: 20px;
+}
+
+#rules 
+{
+    margin-top: 10px;
+    text-align: left;
+}
+
+#rules ul 
+{
+    padding-left: 40px;
+}
+
+#scrabble-container 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; 
+}
+
+#scrabble-board-container 
+{
+    display: flex;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#scrabble-board
+{
+    position: relative;
+    width: 960px;
+    height: 64px;
+}
+
+#scrabble-board img 
+{
+    display: block;
+    width: 100%;
+}
+
+.board-square 
+{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.board-square.ui-state-highlight 
+{
+    border-color: red;
+}
+
+#tile-rack-container 
+{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+#tile-rack 
+{
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 100%;
+}
+
+#tile-rack-img 
+{
+    width: 100%;
+    max-width: 1000px;
+}
+
+.tile 
+{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.tile img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+button 
+{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+button:hover 
+{
+    background-color: #d0d0d0;
+}
+
+#draw-button 
+{
+    margin-right: 10px;
+}
+
+#restart-button 
+{
+    margin-left: 10px;
+}

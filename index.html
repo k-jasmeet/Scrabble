@@ -1,0 +1,50 @@
+<!--/*
+file: index.html
+GUI Assignment: HW5 one line scrabble
+Jasmeet Kaur, UMass Lowell Computer Science, jasmeet_kaur@student.uml.edu
+Copyright (c) 2024 by Jasmeet. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+*/-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Line Scrabble</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--jquery librarys-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>One Line Scrabble</h1>
+        <div id="rules">
+            <h2>Rules:</h2>
+            <ul>
+                <li>Press the Draw Tiles button to get a set of 7 tiles draws to start.</li>
+                <li>Form words on the board by placing tiles horizontally.</li>
+                <li>Each letter has a point value; add up the points for each word formed.</li>
+                <li>Use the bonus squares to double or triple your word or letter score.</li>
+                <li>To start a new game, press the Restart Game button.</li>
+                <li>Have fun!</li>
+            </ul>
+        </div>
+    </header>
+    <div id="scrabble-container">
+        <div id="scrabble-board-container">
+            <div id="scrabble-board">
+                <img src="Scrabble_Board_OneLine.png" alt="Scrabble Board">
+            </div>
+        </div>
+        <div id="tile-rack-container">
+            <div id="tile-rack"></div>
+            <img id="tile-rack-img" src="scrabble-tile-holder-406774_640.png" alt="Tile Rack">
+        </div>
+        <button id="draw-button">Draw Tiles</button>
+        <button id="restart-button">Restart Game</button>
+    </div>
+    <div id="score">Score: 0</div>
+</body>
+</html>
